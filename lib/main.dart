@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 import 'dashboard_screen.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+import 'pages/home_page.dart';
+import 'pages/message_page.dart';
+import 'pages/notification_page.dart';
+import 'pages/search_page.dart';
+
 
 void main() async {
   await GetStorage.init();
@@ -21,7 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: DashboardScreen(),
+      home: DashboardPage(),
     );
   }
 }
